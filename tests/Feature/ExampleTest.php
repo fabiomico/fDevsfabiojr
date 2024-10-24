@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 // use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use App\Models\User;
 
 class ExampleTest extends TestCase
 {
@@ -14,8 +15,13 @@ class ExampleTest extends TestCase
      */
     public function test_the_application_returns_a_successful_response()
     {
-        $response = $this->get('/');
+        // Crea un usuario de prueba usando el factory
+        $user = User::factory()->create();
 
+        // Simula que el usuario está autenticado para esta solicitud
+        $response = $this->actingAs($user)->get('/');
+
+        // Verifica que la respuesta sea exitosa
         $response->assertStatus(200);
     }
 }
