@@ -55,7 +55,7 @@
     </div>
 
     <section class="container mx-auto mt-10">
-        <h2 class="text-4xl text-center font-black my-10">PublicacionesFabio</h2>
+        <h2 class="text-4xl text-center font-black my-10">PublicacionmesFabio</h2>
         @if ($posts->count())
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 @foreach ($posts as $post)
