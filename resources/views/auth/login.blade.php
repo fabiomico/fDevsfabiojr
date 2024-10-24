@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('titulo')
-    <h1 class="text-3xl font-black text-center">Registrate fabiomivo en DevsTagram</h1><br><br>
+    <h1 class="text-3xl font-black text-center">Registrate fabiomivo jjj en DevsTagram</h1><br><br>
 @endsection
 
 @section('contenido')
