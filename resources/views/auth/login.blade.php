@@ -27,7 +27,7 @@
                 </div>
                 <div class="m-5">
                     <label id="password" class="mb-2 block uppercase text-gray-500 font-bold">
-                        Contraceña
+                        Contraceñalllll
                     </label>
                     <input id="password" name="password" type="password" class="border p-3 w-full rounded-lg" placeholder="Ingrese su contraceña"/>
 
