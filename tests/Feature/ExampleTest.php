@@ -17,6 +17,8 @@ class ExampleTest extends TestCase
     {
         $user = User::factory()->create([
             'username' => 'revil', // Agrega el campo 'username' con un valor
+
+
         ]);
     
         $this->actingAs($user);
