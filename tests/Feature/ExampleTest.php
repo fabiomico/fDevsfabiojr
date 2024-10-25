@@ -6,7 +6,6 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use App\Models\User;
 
-
 class ExampleTest extends TestCase
 {
     /**
@@ -17,12 +16,12 @@ class ExampleTest extends TestCase
     public function test_the_application_returns_a_successful_response()
     {
         $user = User::factory()->create([
-            'username' => 'drfabio', 
+            'username' => 'revil', // Agrega el campo 'username' con un valor
         ]);
     
-        $this->actingAs($user); 
+        $this->actingAs($user);
     
-        $response = $this->get('/'); 
+        $response = $this->get('/');
     
         $response->assertStatus(200);
     }
