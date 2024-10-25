@@ -17,12 +17,12 @@ class ExampleTest extends TestCase
     public function test_the_application_returns_a_successful_response()
     {
         $user = User::factory()->create([
-            'username' => 'dr.jasen', // Agrega el campo 'username' con un valor
+            'username' => 'dr.jasen', 
         ]);
     
-        $this->actingAs($user);
+        $this->actingAs($user); 
     
-        $response = $this->get('/');
+        $response = $this->get('/'); 
     
         $response->assertStatus(200);
     }
